@@ -34,7 +34,6 @@ button {
 .wrapper {
   max-width: 594px;
   width: 100%;
-  min-height: 386px;
   height: 100%;
 
   display: flex;
@@ -64,6 +63,13 @@ button {
   border: 1px solid #ced4da;
   background: #fff;
 }
+@media (max-width: 625px) {
+  .form__input {
+    max-width: 625px;
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .form__input ::placeholder {
   color: #54595e;
   font-family: Inter;
@@ -87,7 +93,12 @@ button {
 
   cursor: pointer;
 }
-
+@media (max-width: 625px) {
+  .form__submit {
+    max-width: 625px;
+    width: 100%;
+  }
+}
 .hr {
   background: #dee2e6;
   max-width: 594px;
@@ -96,7 +107,7 @@ button {
 }
 
 .list {
-  padding: 24px 24px 24px 24px;
+  padding: 32px 24px 8px 24px;
 
   display: flex;
   flex-grow: 1;
@@ -118,9 +129,15 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 16px;
+  opacity: 0.5;
 
   cursor: pointer;
 }
+.list__checkbox:checked {
+  content: url("./img/checkboxSelected.svg");
+  opacity: 1;
+}
+
 .list__item {
   color: #54595e;
   font-family: Inter;
@@ -129,7 +146,9 @@ button {
   line-height: 21px;
 }
 .done {
+  color: #54595e;
   text-decoration: line-through;
+  opacity: 0.5;
 }
 .list__btn {
   color: #000;
@@ -175,6 +194,12 @@ button {
 
   cursor: pointer;
 }
+@media (max-width: 625px) {
+  .footer__delete_finished {
+    max-width: 625px;
+    width: 100%;
+  }
+}
 .footer__delete_all {
   width: 131px;
   min-height: 39px;
@@ -191,4 +216,10 @@ button {
   line-height: normal;
 
   cursor: pointer;
+}
+@media (max-width: 625px) {
+  .footer__delete_all {
+    max-width: 625px;
+    width: 100%;
+  }
 }

@@ -150,6 +150,7 @@ const taskForm = document.querySelector("#task_form");
 const deleteAllBtn = document.querySelector("#footer__delete_all");
 const deleteFinishedBtn = document.querySelector("#footer__delete_finished");
 const footerElement = document.querySelector("#footer");
+const horizontalLine = document.querySelector("#hr");
 
 // реализация метода отрисовки нового элемента списка
 function renderTasks() {
@@ -180,11 +181,13 @@ function renderTasks() {
     taskListElem.appendChild(li);
   });
   if (tasks.length === 0) {
-    taskListElem.style.display = "none"
+    taskListElem.style.display = "none";
     footerElement.style.display = "none";
+    horizontalLine.style.display = "none";
   } else {
     taskListElem.style.display = "block";
     footerElement.style.display = "flex";
+    horizontalLine.style.display = "block";
   }
 }
 
