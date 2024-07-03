@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <script src="./index.js" defer></script>
+    <title>ToDoList with LinkedList.js</title>
+  </head>
+  <body class="body">
+    <h1 class="h1">To Do List</h1>
+    <div class="wrapper">
+      <form class="form" id="task_form" action="">
+        <input
+          class="form__input"
+          id="new_task"
+          type="text"
+          placeholder="Что будем делать?"
+        />
+        <input
+          class="form__submit"
+          id="add_task"
+          type="submit"
+          value="Добавить"
+        />
+      </form>
+      <div class="hr"></div>
+      <ul class="list" id="task_list">
+        <!-- <div class="list__item_wr">
+          <div class="item_wr">
+            <input class="list__checkbox" type="checkbox" name="" id="" />
+            <p class="list__item">
+              Сделать удаление каждого элемента по крестику справа
+            </p>
+          </div>
+          <button class="list__btn">❌</button>
+        </div> -->
+      </ul>
+      <section class="footer" id="footer">
+        <button class="footer__delete_finished" id="footer__delete_finished">
+          Удалить завершенные
+        </button>
+        <button class="footer__delete_all" id="footer__delete_all">
+          Удалить все
+        </button>
+      </section>
+    </div>
+  </body>
+</html>
